@@ -34,5 +34,5 @@ name = "golang.org/x/net"
 branch = "master"
 
 [[constraint]]
-name = "github.com/jackdanger/collectlinks"
-branch = "master"
+name = "github.com/gorilla/mux"
+version = "1.6.0"

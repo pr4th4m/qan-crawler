@@ -2,10 +2,16 @@
 
 
 [[projects]]
-  branch = "master"
-  name = "github.com/jackdanger/collectlinks"
+  name = "github.com/gorilla/context"
   packages = ["."]
-  revision = "24c4ee2870ba625f927b59de8c421c3f0be82b90"
+  revision = "1ea25387ff6f684839d82767c1733ff4d4d15d0a"
+  version = "v1.1"
+
+[[projects]]
+  name = "github.com/gorilla/mux"
+  packages = ["."]
+  revision = "53c1911da2b537f792e7cafcb446b05ffe33b996"
+  version = "v1.6.1"
 
 [[projects]]
   branch = "master"
@@ -19,6 +25,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "0d9e2ab1f761449e739851116d0dc5a46d457af5984c8210af5e4e3de47e4f57"
+  inputs-digest = "c6d1c56fee14030a005c26495666c9d61e7ada12ab402ebb272e20a7554d561d"
   solver-name = "gps-cdcl"
   solver-version = 1

@@ -19,6 +19,9 @@ Crawl web pages recursively
     go get -u github.com/golang/dep/cmd/dep
     dep ensure
 
+    # Run unit tests
+    go test ./...
+
     # Build and install
     go build
     ./qan-crawler

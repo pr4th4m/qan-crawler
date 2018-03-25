@@ -2,7 +2,7 @@
 # docker build -t "qan-crawler:dev" .
 #
 # # Run container
-# docker run --name qan-crawler -p 8080:8080 -d qan-crawler:dev
+# docker run --rm --name qan-crawler -p 8080:8080 -d qan-crawler:dev
 # docker logs -f qan-crawler
 FROM golang:1.10.0-stretch
 

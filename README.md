@@ -1,6 +1,6 @@
 **This is a test project**
 
-#### qan-crawler
+##### Qan-Crawler
 Crawl web pages recursively
 
 
@@ -29,16 +29,16 @@ Crawl web pages recursively
 
 #### Usage
 
-    curl '0.0.0.0:8080/crawl'
+    curl '0.0.0.0:8080/api/v1/crawl'
 
     # Url param
-    curl '0.0.0.0:8080/crawl?url=https://www.qantasmoney.com'
+    curl '0.0.0.0:8080/api/v1/crawl?url=https://www.qantasmoney.com'
 
     # Depth param
-    curl '0.0.0.0:8080/crawl?url=https://www.qantasmoney.com&depth=2'
+    curl '0.0.0.0:8080/api/v1/crawl?url=https://www.qantasmoney.com&depth=2'
 
     # Exclude uri param
-    http '0.0.0.0:8080/crawl?url=https://www.qantasmoney.com&depth=2&exclude=https://www.qantasstore.com.au/
+    http '0.0.0.0:8080/api/v1/crawl?url=https://www.qantasmoney.com&depth=2&exclude=https://www.qantasstore.com.au/'
 
     # Defaults
 	url = "https://google.com"

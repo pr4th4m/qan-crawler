@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"github.com/gorilla/mux"
 	qanCrawler "github.com/pratz/qan-crawler/crawler"
 	"log"
@@ -9,9 +10,14 @@ import (
 	"strconv"
 )
 
+const (
+	apiVersion = "/api/v1"
+)
+
 func main() {
 	var router = mux.NewRouter()
-	router.HandleFunc("/crawl", crawl).Methods(http.MethodGet)
+	endpoint := fmt.Sprintf("%s/crawl", apiVersion)
+	router.HandleFunc(endpoint, crawl).Methods(http.MethodGet)
 
 	// NOTE: We can accept host/port from flags as well
 	address := "0.0.0.0:8080"
@@ -60,7 +66,7 @@ func RenderJSON(w http.ResponseWriter, status int, obj interface{}) error {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(status)
 
-	// NOTE: Uncomment this is see api response
+	// NOTE: Uncomment to display api response
 	// log.Println("Render response", obj)
 	return json.NewEncoder(w).Encode(obj)
 }
